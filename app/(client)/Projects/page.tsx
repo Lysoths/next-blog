@@ -1,10 +1,10 @@
-import Card from "@/components/card";
+import Cards from "@/components/cards";
 import React from "react";
 
 const ProjectPage = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center p-5 gap-7 ">
-      <Card />
+    <div className="flex items-stretch justify-center flex-wrap gap-3 h-full mt-14 p-3">
+      <Cards />
     </div>
   );
 };

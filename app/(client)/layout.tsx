@@ -29,7 +29,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ClientHeader />
-          <section className="flex-1 mt-2 flex container">{children}</section>
+          <section className="flex-1 mt-2  container">{children}</section>
           <ClientFooter />
         </ThemeProvider>
       </body>

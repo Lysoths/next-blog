@@ -24,6 +24,7 @@
     --input: 240 5.9% 90%;
     --ring: 346.8 77.2% 49.8%;
     --radius: 0.5rem;
+    --after: black;
   }
 
   .dark {
@@ -47,6 +48,7 @@
     --input: 240 3.7% 15.9%;
     --ring: 346.8 77.2% 49.8%;
     --projectCard: #d52941;
+    --after: white;
   }
 }
 
@@ -60,8 +62,22 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    max-width: 1440px;
     min-height: 100svh;
-    margin: 0 auto;
   }
+}
+
+.afterLinks::before {
+  content: "\00a0";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--after);
+  transition: all 0.5s ease;
+}
+
+.afterLinks:hover::before {
+  width: 100%;
+  transition: all 0.5s ease;
 }
